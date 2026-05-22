@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.the_coffee_farm;
 
 import javafx.event.ActionEvent;
@@ -13,15 +10,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-/**
- *
- * @author admin
- */
-public class FoodAndDrinkController {
+public class NguyenLieuSoChe_Controller {
         @FXML
     private Button btnBack;
     
-        @FXML
+       @FXML
     public void veTrangChu(ActionEvent event){
         try{
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -32,5 +25,5 @@ public class FoodAndDrinkController {
             System.out.println("Lỗi không quay lại được trang trước!");
             e.printStackTrace();
         }
-    }
+    } 
 }

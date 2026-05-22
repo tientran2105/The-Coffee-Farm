@@ -1,4 +1,4 @@
-package com.mycompany.the_coffee_farm; // Giữ nguyên dòng package của m
+package com.mycompany.the_coffee_farm; 
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,14 +18,13 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.shape.Rectangle;
 
-public class PrimaryController implements Initializable {
+public class Primary_Controller implements Initializable {
 
     @FXML
     private ImageView bannerImage;
 
     private int imageIndex = 0;
-    
-    // Đổi lại tên file ảnh cho đúng với trong máy m
+   
     private String[] danhSachAnh = {
         "/com/mycompany/the_coffee_farm/images/anh1.jpg",
         "/com/mycompany/the_coffee_farm/images/anh2.jpg",
@@ -61,32 +60,27 @@ public class PrimaryController implements Initializable {
     public void chuyenTrangThongTin(ActionEvent event) {
         try {
 javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-        
-        // 2. Tải file giao diện trang Thông tin doanh nghiệp (ThongTin.fxml)
         javafx.scene.Parent trangThongTin = javafx.fxml.FXMLLoader.load(getClass().getResource("ThongTinDoanhNghiep.fxml"));
-        
-        // 3. Tạo một cảnh mới (Scene) chứa trang Thông tin vừa load
-        javafx.scene.Scene sceneMoi = new javafx.scene.Scene(trangThongTin);
-        
-        // 4. Thay thế toàn bộ màn hình hiện tại thành trang Thông tin để đọc
-        stage.setScene(sceneMoi);
+                javafx.scene.Scene sceneMoi = new javafx.scene.Scene(trangThongTin);
+                stage.setScene(sceneMoi);
         } catch (IOException e) {
             System.out.println("Lỗi không load được file thông tin!");
         }
     }
     
-   // === VÀO NHÁNH 1: NGUYÊN LIỆU THÔ ===
     @FXML
     public void vaoNguyenLieuTho(javafx.event.ActionEvent event) {
         try {
             javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            // 1. Lôi cái Vỏ có thanh 4 nút đáy ra
-            javafx.scene.layout.BorderPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
-            // 2. Lôi cái Ruột của nhánh này ra
+            
+            javafx.scene.layout.StackPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
+            
             javafx.scene.Parent ruotNLT = javafx.fxml.FXMLLoader.load(getClass().getResource("NguyenLieuTho.fxml"));
-            // 3. Nhét ruột vào giữa vỏ
-            voChinh.setCenter(ruotNLT);
-            // 4. Lên đèn!
+            
+            javafx.scene.layout.BorderPane khungChinh = (javafx.scene.layout.BorderPane) voChinh.lookup("#khungChinh");
+            
+            khungChinh.setCenter(ruotNLT);
+            
             stage.setScene(new javafx.scene.Scene(voChinh));
         } catch (Exception e) {
             System.out.println("Lỗi vào Nguyên liệu thô!");
@@ -94,14 +88,16 @@ javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSo
         }
     }
 
-    // === VÀO NHÁNH 2: NGUYÊN LIỆU SƠ CHẾ ===
     @FXML
     public void vaoNguyenLieuSoChe(javafx.event.ActionEvent event) {
         try {
             javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            javafx.scene.layout.BorderPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
+            javafx.scene.layout.StackPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
             javafx.scene.Parent ruotNLSC = javafx.fxml.FXMLLoader.load(getClass().getResource("NguyenLieuSoChe.fxml"));
-            voChinh.setCenter(ruotNLSC);
+            
+            javafx.scene.layout.BorderPane khungChinh = (javafx.scene.layout.BorderPane) voChinh.lookup("#khungChinh");
+            khungChinh.setCenter(ruotNLSC);
+            
             stage.setScene(new javafx.scene.Scene(voChinh));
         } catch (Exception e) {
             System.out.println("Lỗi vào Nguyên liệu sơ chế!");
@@ -109,14 +105,16 @@ javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSo
         }
     }
 
-    // === VÀO NHÁNH 3: FOOD AND DRINK ===
     @FXML
     public void vaoFoodAndDrink(javafx.event.ActionEvent event) {
         try {
             javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            javafx.scene.layout.BorderPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
+            javafx.scene.layout.StackPane voChinh = javafx.fxml.FXMLLoader.load(getClass().getResource("ThanhChucNang.fxml"));
             javafx.scene.Parent ruotFood = javafx.fxml.FXMLLoader.load(getClass().getResource("FoodAndDrink.fxml"));
-            voChinh.setCenter(ruotFood);
+            
+            javafx.scene.layout.BorderPane khungChinh = (javafx.scene.layout.BorderPane) voChinh.lookup("#khungChinh");
+            khungChinh.setCenter(ruotFood);
+            
             stage.setScene(new javafx.scene.Scene(voChinh));
         } catch (Exception e) {
             System.out.println("Lỗi vào Food and Drink!");

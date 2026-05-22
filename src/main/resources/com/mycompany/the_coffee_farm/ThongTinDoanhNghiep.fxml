@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane hbarPolicy="NEVER" pannable="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.ThongTinDoanhNghiepController">
+<ScrollPane hbarPolicy="NEVER" pannable="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.ThongTinDoanhNghiep_Controller">
    <content>
       <AnchorPane prefHeight="700.0" prefWidth="500.0">
          <children>
