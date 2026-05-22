@@ -8,6 +8,6 @@ package com.mycompany.the_coffee_farm;
  *
  * @author admin
  */
-public class HomeScreenController {
+public class ThanhChucNangController {
     
 }
