@@ -49,7 +49,7 @@
                                  <children>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Bông Lan Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Bông Lan Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -62,7 +62,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Cheese Cake Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Cheese Cake Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -75,7 +75,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Chiffon Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Chiffon Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="340.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -88,7 +88,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Da Bò Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Da Bò Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -101,7 +101,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Tiramisu" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Tiramisu" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -114,7 +114,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Quy Hạt Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Quy Hạt Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -127,7 +127,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Papparoti" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Papparoti" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -140,7 +140,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Muffin Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Muffin Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -153,7 +153,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bánh Mì Bơ Cà Phê" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Mì Bơ Cà Phê" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -170,9 +170,9 @@
                                  <children>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cafe Đen" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Cafe Đen" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="30.000đ/ly" />
-                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -183,9 +183,9 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cafe Nâu" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Cafe Nâu" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="35.000đ/ly" />
-                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -196,9 +196,9 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Bạc Xỉu" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bạc Xỉu" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
-                                          <Button layoutX="340.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="340.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -209,9 +209,9 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cafe Latte" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Cafe Latte" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
-                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -222,9 +222,9 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cafe Mocha" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Cafe Mocha" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
-                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -235,9 +235,9 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Espresso" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Espresso" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
-                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                          <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                           <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -248,7 +248,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cappuchino" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Cappuchino" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -261,7 +261,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Caramel Matchiato" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Caramel Matchiato" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
@@ -274,7 +274,7 @@
                                     </AnchorPane>
                                     <AnchorPane prefHeight="100.0" prefWidth="407.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;">
                                        <children>
-                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Americano" wrapText="true" />
+                                          <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Americano" wrapText="true" />
                                           <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/ly" />
                                           <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                           <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />

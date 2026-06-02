@@ -3,6 +3,12 @@ package com.mycompany.the_coffee_farm;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class ThanhChucNang_Controller {
     
@@ -40,18 +46,18 @@ public class ThanhChucNang_Controller {
             e.printStackTrace(); 
         }
     }
-    @FXML
-    public void bamNutHome(javafx.event.ActionEvent event) {
-        try {
-            javafx.scene.Parent trangChuTacVu = javafx.fxml.FXMLLoader.load(getClass().getResource("FoodAndDrink.fxml"));
-            
-            if (khungChinh != null) {
-                khungChinh.setCenter(trangChuTacVu);
-            } else {
-                System.out.println("Lỗi: Không tìm thấy 'khungChinh' để nhét trang Home!");
-            }
-        } catch (Exception e) {
-            System.out.println("Lỗi: Không load được giao diện chính khi bấm Home!");
+            @FXML
+    private Button btnBack;
+    
+        @FXML
+    public void veTrangChu(ActionEvent event){
+        try{
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Parent rooPrimary = FXMLLoader.load(getClass().getResource("primary.fxml"));
+            Scene sceneMoi = new Scene(rooPrimary);
+            stage.setScene(sceneMoi);
+        } catch(Exception e){
+            System.out.println("Lỗi không quay lại được trang trước!");
             e.printStackTrace();
         }
     }
@@ -92,6 +98,20 @@ public class ThanhChucNang_Controller {
         }
         if(lopPhuShippingMethod != null) {
             lopPhuShippingMethod.setVisible(false); 
+        }
+    }
+      @FXML
+    private void moManHinhGioHang(javafx.event.ActionEvent event) {
+        try {
+            javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("Order_Screen.fxml"));
+            javafx.scene.Scene scene = new javafx.scene.Scene(root);
+            
+            javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Lỗi đéo chuyển được trang!");
+            e.printStackTrace();
         }
     }
 

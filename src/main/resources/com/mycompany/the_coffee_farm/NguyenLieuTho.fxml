@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="630.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.NguyenLieuTho_Controller">
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.NguyenLieuTho_Controller">
    <children>
       <Label layoutX="90.0" layoutY="14.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #4A4A4A;" text="Nguyên Liệu Thô" />
 
@@ -23,7 +23,7 @@
                      <children>
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Robusta (Xanh)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -38,7 +38,7 @@
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="10.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Robusta (Chín)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="45.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/Robusta_chin.png" />
@@ -52,7 +52,7 @@
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="10.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Arabica (Xanh)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="50.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/arabica_xanh.png" />
@@ -66,7 +66,7 @@
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="10.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Arabica (Chín)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="55.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/arabica_chin.png" />
@@ -80,7 +80,7 @@
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="10.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Xanh Lùn (Xanh)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="42.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/xanhlun_xanh.png" />
@@ -94,7 +94,7 @@
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="90.0" layoutX="10.0" layoutY="10.0" stroke="TRANSPARENT" width="90.0" />
                         <Label layoutX="115.0" layoutY="15.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Cà phê Xanh Lùn (Chín)" wrapText="true" />
                         <Label layoutX="115.0" layoutY="70.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="48.000đ/kg" />
-                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                        <Button layoutX="415.0" layoutY="65.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                         <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/xanhlun_chin.png" />

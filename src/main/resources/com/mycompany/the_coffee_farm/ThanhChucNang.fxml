@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<StackPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.ThanhChucNang_Controller">
+<StackPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.ThanhChucNang_Controller">
    <children>
       <BorderPane fx:id="khungChinh" prefHeight="700.0" prefWidth="500.0">
          <bottom>
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" spacing="40.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, -2);" BorderPane.alignment="CENTER">
                <children>
-                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#bamNutHome" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-text-fill: #707070;" text="Home">
+                  <Button fx:id="btnBack" contentDisplay="TOP" mnemonicParsing="false" onAction="#veTrangChu" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-text-fill: #707070;" text="Home">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -34,7 +34,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnShoppingCart" contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-text-fill: #707070;" text="Cart">
+                  <Button fx:id="btnShoppingCart" contentDisplay="TOP" mnemonicParsing="false" onAction="#moManHinhGioHang" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-text-fill: #707070;" text="Cart">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
