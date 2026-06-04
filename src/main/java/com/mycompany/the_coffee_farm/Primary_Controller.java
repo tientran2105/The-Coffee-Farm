@@ -124,15 +124,15 @@ public class Primary_Controller implements Initializable {
     @FXML
     public void moTrangDangNhap(javafx.event.ActionEvent event) {
         try {
-            // Đưa người dùng sang trang Đăng nhập
+        
             javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            // (Nhớ tạo file DangNhap.fxml nhé)
             javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("DangNhap.fxml")); 
             javafx.scene.Scene scene = new javafx.scene.Scene(root);
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
             System.out.println("Lỗi không load được trang Đăng Nhập!");
+            e.printStackTrace();
         }
     }
 }
