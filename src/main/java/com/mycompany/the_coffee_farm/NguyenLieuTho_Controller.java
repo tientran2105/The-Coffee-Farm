@@ -27,10 +27,9 @@ public class NguyenLieuTho_Controller {
         }
     }
 
-    @FXML
+@FXML
     private void ThemGioHang(ActionEvent event) {
         javafx.scene.control.Button btnClicked = (javafx.scene.control.Button) event.getSource();
-
         javafx.scene.layout.AnchorPane theMon = (javafx.scene.layout.AnchorPane) btnClicked.getParent();
 
         String tenMon = "";
@@ -39,7 +38,6 @@ public class NguyenLieuTho_Controller {
         for (javafx.scene.Node node : theMon.getChildren()) {
             if (node instanceof javafx.scene.control.Label) {
                 javafx.scene.control.Label lbl = (javafx.scene.control.Label) node;
-
                 if (lbl.getText().contains("đ")) {
                     chuoiGia = lbl.getText();
                 } else {
@@ -55,22 +53,13 @@ public class NguyenLieuTho_Controller {
         } catch (Exception e) {
             System.out.println("Lỗi đọc giá tiền món: " + tenMon);
         }
-
-        boolean daCoTrongGio = false;
-        int soLuongHienTai = 1;
-        for (GioHang.MonHang mh : GioHang.danhSachMua) {
-            if (mh.tenMon.equals(tenMon)) {
-                mh.soLuong += 1;
-                soLuongHienTai = mh.soLuong;
-                daCoTrongGio = true;
-                break;
-            }
+        if (TaiKhoan.gioHangChung.containsKey(tenMon)) {
+            TaiKhoan.gioHangChung.get(tenMon)[0] += 1;
+            System.out.println(">>> Đã +1 số lượng món: " + tenMon + " (Tổng: " + TaiKhoan.gioHangChung.get(tenMon)[0] + ")");
+        } else {
+            TaiKhoan.gioHangChung.put(tenMon, new int[]{1, giaTien});
+            System.out.println(">>> Vừa thêm mới vào giỏ: " + tenMon + " | Giá: " + giaTien);
         }
-
-        if (!daCoTrongGio) {
-            GioHang.danhSachMua.add(new GioHang.MonHang(tenMon, giaTien, 1));
-        }
-
-        System.out.println(">>> Vừa thêm: " + tenMon + " | Giá: " + giaTien + " | Số lượng: " + soLuongHienTai);
+        
     }
 }

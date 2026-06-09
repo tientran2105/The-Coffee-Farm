@@ -5,4 +5,6 @@ public class TaiKhoan {
     public static boolean daDangNhap = false;
     public static int phuongThucNhan = 0;
     public static String tenTaiKhoan = "";
+    public static javafx.scene.Scene sceneTruocKhiVaoGio;
+    public static java.util.Map<String, int[]> gioHangChung = new java.util.HashMap<>();
 }

@@ -38,7 +38,6 @@ public class ThanhChucNang_Controller {
     private javafx.scene.control.TextField txtSDTNhan;
     @FXML
     private javafx.scene.control.TextField txtDiaChiNhan;
-    // -----------------------------------
 
     public static String trangChuCuaNhanh = "FoodAndDrink.fxml";
 
@@ -52,7 +51,7 @@ public class ThanhChucNang_Controller {
                 System.out.println("Lỗi: Chưa đặt fx:id là 'khungChinh' cho BorderPane bên Scene Builder!");
             }
         } catch (Exception e) {
-            System.out.println("Lỗi đéo về được nhánh chính: " + trangChuCuaNhanh);
+            System.out.println("Lỗi không về được nhánh chính: " + trangChuCuaNhanh);
             e.printStackTrace();
         }
     }
@@ -165,11 +164,11 @@ public class ThanhChucNang_Controller {
         }
         dongPopupShipping(event);
     }
-    // ----------------------------------------------
 
     @FXML
     private void moManHinhGioHang(javafx.event.ActionEvent event) {
         try {
+            TaiKhoan.sceneTruocKhiVaoGio = ((javafx.scene.Node) event.getSource()).getScene();
             javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("Order_Screen.fxml"));
             javafx.scene.Scene scene = new javafx.scene.Scene(root);
 

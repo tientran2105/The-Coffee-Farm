@@ -51,7 +51,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Bông Lan Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -64,7 +64,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Cheese Cake Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -77,7 +77,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Chiffon Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="340.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="340.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -90,7 +90,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Da Bò Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -103,7 +103,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Tiramisu" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -116,7 +116,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Quy Hạt Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -129,7 +129,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Papparoti" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -142,7 +142,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Muffin Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
@@ -155,7 +155,7 @@
                                                     <children>
                                                         <Label layoutX="89.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0" style="-fx-font-family: 'Arial'; -fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #333333;" styleClass="ten-mon" text="Bánh Mì Bơ Cà Phê" wrapText="true" />
                                                         <Label layoutX="89.0" layoutY="48.0" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-text-fill: #888888;" text="40.000đ/Hộp" />
-                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
+                                                        <Button layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#ThemGioHang" prefHeight="18.0" prefWidth="26.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 14; -fx-cursor: hand; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #707070; -fx-padding: 0;" text="+" />
                                                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#EAEAEA" height="70.0" layoutX="8.0" layoutY="10.0" stroke="TRANSPARENT" width="73.0" />
                                                         <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>

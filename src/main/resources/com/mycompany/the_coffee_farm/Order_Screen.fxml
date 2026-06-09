@@ -1,51 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.OrderScreen_Controller">
-    <children>
-        <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#veTrangChu" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
-            <font>
-                <Font size="23.0" />
-            </font>
-        </Button>
-        <Label layoutX="77.0" layoutY="24.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #4A4A4A;" text="Giỏ Hàng" />
-        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutY="89.0" prefHeight="530.0" prefWidth="510.0" style="-fx-background-color: white; -fx-background: white; -fx-border-color: transparent;" vbarPolicy="AS_NEEDED">
-            <content>
-                <VBox fx:id="vboxGioHang" prefHeight="529.0" prefWidth="492.0" spacing="12.0" style="-fx-background-color: white; -fx-padding: 15;" />
-            </content>
-        </ScrollPane>
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.OrderScreen_Controller">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" onAction="#xuLyQuayLai" style="-fx-background-color: transparent; -fx-cursor: hand;" text="←">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="66.0" layoutY="20.0" style="-fx-font-weight: bold;" text="Giỏ Hàng">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
       
-        <HBox alignment="CENTER_LEFT" layoutY="620.0" prefHeight="65.0" prefWidth="510.0" spacing="10.0" style="-fx-background-color: white; -fx-border-color: #E8E8E8; -fx-border-width: 1 0 0 0; -fx-padding: 0 15 0 15;">
-            <children>
-                <CheckBox fx:id="chkTatCa" mnemonicParsing="false" onAction="#handleChonTatCa" text="Tất cả">
-                    <font>
+      <Button fx:id="btnSuaGioHang" layoutX="420.0" layoutY="20.0" mnemonicParsing="false" onAction="#xuLySuaGioHang" style="-fx-background-color: transparent; -fx-text-fill: #f79502; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 16px;" text="Sửa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+
+      <ScrollPane layoutY="70.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <VBox fx:id="vboxGioHang" prefWidth="480.0" spacing="10.0" style="-fx-padding: 10;" />
+         </content>
+      </ScrollPane>
+
+      <VBox layoutY="480.0" prefHeight="130.0" prefWidth="500.0" spacing="12.0" style="-fx-background-color: #f9f9f9; -fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-width: 1 0 0 0;" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Phương Thức Thanh Toán:" />
+            <fx:define>
+               <ToggleGroup fx:id="nhomThanhToan" />
+            </fx:define>
+            <RadioButton fx:id="rdoOnline" mnemonicParsing="false" style="-fx-cursor: hand;" text="Thanh toán Online (Quét mã QR)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="nhomThanhToan" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdoTaiQuay" mnemonicParsing="false" style="-fx-cursor: hand;" text="Thanh toán Tại quầy" toggleGroup="$nhomThanhToan">
+               <font>
+                  <Font size="14.0" />
+                </font>
+            </RadioButton>
+         </children>
+      </VBox>
+
+      <HBox alignment="CENTER_LEFT" layoutY="630.0" prefHeight="70.0" prefWidth="500.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 10 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, -5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <CheckBox fx:id="chkTatCa" mnemonicParsing="false" onAction="#xuLyChonTatCa" style="-fx-cursor: hand;" text="Tất cả">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="220.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Tổng cộng: ">
+                     <font>
                         <Font size="14.0" />
-                    </font>
-                </CheckBox>
-            
-                <Region HBox.hgrow="ALWAYS" />
-            
-                <Label fx:id="lblTongTien" text="0đ" textFill="#4A4A4A">
-                    <font>
-                        <Font name="System Bold" size="18.0" />
-                    </font>
-                </Label>
-            
-                <Button fx:id="btnMuaHang" mnemonicParsing="false" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #888888; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Mua hàng ">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-            </children>
-        </HBox>
-    </children>
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTongTien" style="-fx-font-weight: bold; -fx-text-fill: red;" text="0đ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#xuLyMuaHang" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #888888; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Mua hàng">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
 </AnchorPane>
