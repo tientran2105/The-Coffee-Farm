@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="khungFoodAndDrink" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.FoodAndDrink_Controller">
+<AnchorPane id="AnchorPane" fx:id="khungFoodAndDrink" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.FoodAndDrink_Controller">
     <children>
         <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#veTrangChu" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
             <font>
@@ -27,14 +27,20 @@
                 <Image url="@images/loupe.png" />
             </image>
         </ImageView>
-        <SplitPane dividerPositions="0.1941272430668842" layoutX="2.0" layoutY="131.0" prefHeight="566.0" prefWidth="492.0">
+        <SplitPane dividerPositions="0.1941272430668842" layoutX="2.0" layoutY="131.0" prefHeight="566.0" prefWidth="492.0" style="-fx-background-color: #FFFDE7;">
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                     <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" style="-fx-background-color: #FFFDE7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <children>
-                                <Button mnemonicParsing="false" onAction="#showDoUong" prefHeight="70.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Đồ Uống" />
-                                <Button mnemonicParsing="false" onAction="#showDoAn" prefHeight="70.0" prefWidth="100.0" style="-fx-background-radius: 15;" text="Đồ Ăn" />
+                                <Button mnemonicParsing="false" onAction="#showDoUong" prefHeight="70.0" prefWidth="100.0" style="-fx-background-radius: 15; -fx-background-color: #E7FFCD;" text="Đồ Uống">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                                <Button mnemonicParsing="false" onAction="#showDoAn" prefHeight="70.0" prefWidth="100.0" style="-fx-background-radius: 15; -fx-background-color: #E7FFCD;" text="Đồ Ăn">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
                             </children>
                         </VBox>
                     </children>

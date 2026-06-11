@@ -116,10 +116,10 @@ public class FoodAndDrink_Controller {
         }
         if (TaiKhoan.gioHangChung.containsKey(tenMon)) {
             TaiKhoan.gioHangChung.get(tenMon)[0] += 1;
-            System.out.println(">>> Đã +1 số lượng món: " + tenMon + " (Tổng: " + TaiKhoan.gioHangChung.get(tenMon)[0] + ")");
+            System.out.println(" Đã +1 số lượng món: " + tenMon + " (Tổng: " + TaiKhoan.gioHangChung.get(tenMon)[0] + ")");
         } else {
             TaiKhoan.gioHangChung.put(tenMon, new int[]{1, giaTien});
-            System.out.println(">>> Vừa thêm mới vào giỏ: " + tenMon + " | Giá: " + giaTien);
+            System.out.println("Vừa thêm mới vào giỏ: " + tenMon + " | Giá: " + giaTien);
         }
             }
 }

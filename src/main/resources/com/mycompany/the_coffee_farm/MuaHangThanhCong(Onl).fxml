@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.MuaHangThanhCong_Controller">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quayVeTrangChu" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="169.0" layoutY="131.0" prefHeight="50.0" prefWidth="210.0" text="Chúc mừng bạn đã" textFill="#00bfff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="75.0" fitWidth="69.0" layoutX="221.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/check.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="175.0" prefHeight="50.0" prefWidth="210.0" text="đặt hàng thành công!" textFill="#00bfff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

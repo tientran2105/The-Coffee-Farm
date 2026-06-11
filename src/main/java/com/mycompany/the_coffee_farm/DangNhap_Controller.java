@@ -53,7 +53,7 @@ public class DangNhap_Controller {
         String mk = txtMatKhau.getText();
 
         if (tk.isEmpty() || mk.isEmpty()) {
-            System.out.println("Ê! Chưa nhập đủ thông tin kìa!");
+            System.out.println("Chưa nhập đủ thông tin!");
             return;
         }
 

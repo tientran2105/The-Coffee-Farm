@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.DieuKhoan_Controller">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.DieuKhoan_Controller">
     <children>
         <Label prefHeight="60.0" prefWidth="500.0" />
         <Button layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#quayLaiAccount" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
@@ -21,7 +21,7 @@
                 <Font size="9.0" />
             </font>
         </Label>
-        <ScrollPane fitToWidth="true" layoutY="54.0" prefHeight="640.0" prefWidth="500.0">
+        <ScrollPane fitToWidth="true" layoutY="54.0" prefHeight="646.0" prefWidth="500.0">
             <content>
                 <VBox prefHeight="640.0" prefWidth="485.0" spacing="15.0">
                     <padding>

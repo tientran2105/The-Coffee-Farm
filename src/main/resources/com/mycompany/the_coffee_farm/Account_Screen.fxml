@@ -13,11 +13,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.Account_Screen_Controller">
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.Account_Screen_Controller">
     <children>
-        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F8F8F8; -fx-padding: 20; -fx-spacing: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFDE7; -fx-padding: 20; -fx-spacing: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <HBox prefHeight="33.0" prefWidth="460.0">
+                <HBox prefHeight="33.0" prefWidth="460.0" style="-fx-background-color: #FFFDE7;">
                     <children>
                         <Label text="TÀI KHOẢN">
                             <font>
@@ -188,7 +188,7 @@
                                 <Font name="Arial Bold" size="12.0" />
                             </font>
                         </Button>
-                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="547.0" style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-cursor: hand; -fx-padding: 5;" text="Đăng xuất">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#xuLyDangXuat" prefHeight="38.0" prefWidth="547.0" style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-cursor: hand; -fx-padding: 5;" text="Đăng xuất">
                             <graphic>
                                 <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -204,5 +204,15 @@
                 </VBox>
             </children>
         </VBox>
+        <AnchorPane fx:id="lopPhuDangXuat" onMouseClicked="#chuyenVePrimary" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" layoutX="100.0" layoutY="300.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+                    <children>
+                        <Text fill="#4caf50" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="Đăng xuất thành công!" />
+                        <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13px; -fx-font-style: italic;" text="(Bấm vào vùng bất kỳ để tiếp tục)" />
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>

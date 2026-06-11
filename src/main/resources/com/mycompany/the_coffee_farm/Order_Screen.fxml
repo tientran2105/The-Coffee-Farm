@@ -12,8 +12,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.OrderScreen_Controller">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.OrderScreen_Controller">
    <children>
       <Button layoutX="14.0" layoutY="14.0" onAction="#xuLyQuayLai" style="-fx-background-color: transparent; -fx-cursor: hand;" text="←">
          <font>
@@ -26,19 +28,19 @@
          </font>
       </Label>
       
-      <Button fx:id="btnSuaGioHang" layoutX="420.0" layoutY="20.0" mnemonicParsing="false" onAction="#xuLySuaGioHang" style="-fx-background-color: transparent; -fx-text-fill: #f79502; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 16px;" text="Sửa">
+      <Button fx:id="btnSuaGioHang" layoutX="420.0" layoutY="20.0" mnemonicParsing="false" onAction="#xuLySuaGioHang" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 16px;" text="Sửa" textFill="#e32929">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
 
-      <ScrollPane layoutY="70.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <ScrollPane layoutY="70.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <content>
             <VBox fx:id="vboxGioHang" prefWidth="480.0" spacing="10.0" style="-fx-padding: 10;" />
          </content>
       </ScrollPane>
 
-      <VBox layoutY="480.0" prefHeight="130.0" prefWidth="500.0" spacing="12.0" style="-fx-background-color: #f9f9f9; -fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-width: 1 0 0 0;" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <VBox layoutY="480.0" prefHeight="130.0" prefWidth="500.0" spacing="12.0" style="-fx-background-color: #FFFDE7; -fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-width: 1 0 0 0;" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Phương Thức Thanh Toán:" />
             <fx:define>
@@ -60,7 +62,7 @@
          </children>
       </VBox>
 
-      <HBox alignment="CENTER_LEFT" layoutY="630.0" prefHeight="70.0" prefWidth="500.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 10 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, -5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <HBox alignment="CENTER_LEFT" layoutY="630.0" prefHeight="70.0" prefWidth="500.0" spacing="15.0" style="-fx-background-color: #E3F2FD; -fx-padding: 10 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, -5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <CheckBox fx:id="chkTatCa" mnemonicParsing="false" onAction="#xuLyChonTatCa" style="-fx-cursor: hand;" text="Tất cả">
                <font>
@@ -84,7 +86,7 @@
                   <Insets right="15.0" />
                </padding>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#xuLyMuaHang" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #888888; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Mua hàng">
+            <Button mnemonicParsing="false" onAction="#xuLyMuaHang" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #F7E85A; -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Mua hàng">
                <font>
                   <Font size="15.0" />
                </font>
@@ -92,4 +94,19 @@
          </children>
       </HBox>
    </children>
+   <AnchorPane fx:id="lopPhuQR" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: rgba(0, 0, 0, 0.6);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" onMouseClicked="#xacNhanDaQuetQR">
+    <children>
+        <VBox alignment="CENTER" layoutX="75.0" layoutY="150.0" prefHeight="400.0" prefWidth="350.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 20;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="Quét mã QR để thanh toán" />
+                <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/qr_code.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: italic;" text="Chạm vào vùng ngoài sau khi quét xong" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
 </AnchorPane>

@@ -40,11 +40,9 @@ public class DangKiTaiKhoan_Controller {
     @FXML
     public void veTrangDangNhap(javafx.event.ActionEvent event) {
         try {
-            // Khúc này là load thẳng về file Đăng Nhập nè m
             javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("DangNhap.fxml"));
             javafx.scene.Scene scene = new javafx.scene.Scene(root);
 
-            // Thay màn hình
             javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();

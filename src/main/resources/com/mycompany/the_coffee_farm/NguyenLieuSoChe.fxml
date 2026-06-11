@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="khungNguyenLieuSoChe" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.NguyenLieuSoChe_Controller">
+<AnchorPane id="AnchorPane" fx:id="khungNguyenLieuSoChe" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.NguyenLieuSoChe_Controller">
     <children>
         <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#veTrangChu" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
             <font>
@@ -20,7 +20,7 @@
         <Label layoutX="76.0" layoutY="24.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #4A4A4A;" text="Nguyên Liệu Sơ Chế" />
         <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="10.0" layoutY="65.0" prefHeight="575.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background: white; -fx-border-color: transparent;" vbarPolicy="AS_NEEDED">
             <content>
-                <VBox spacing="12.0" style="-fx-background-color: white; -fx-padding: 15;">
+                <VBox prefHeight="754.0" prefWidth="495.0" spacing="12.0" style="-fx-background-color: #FFFDE7; -fx-padding: 15;">
                     <children>
                         <AnchorPane prefHeight="110.0" prefWidth="460.0" style="-fx-border-color: #E8E8E8; -fx-border-radius: 12; -fx-background-radius: 12; -fx-background-color: white;">
                             <children>

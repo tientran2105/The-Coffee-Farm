@@ -45,4 +45,36 @@ public class Account_Screen_Controller {
         }
         System.out.println("Đã xác nhận tài khoản. Đang tải Lịch sử đơn hàng!");
     }
+    @FXML
+    private javafx.scene.layout.AnchorPane lopPhuDangXuat;
+
+    @FXML
+    public void xuLyDangXuat(javafx.event.ActionEvent event) {
+
+        TaiKhoan.daDangNhap = false; 
+        TaiKhoan.gioHangChung.clear();
+        TaiKhoan.phuongThucNhan = 0;
+
+        if (lopPhuDangXuat != null) {
+            lopPhuDangXuat.setVisible(true);
+        }
+    }
+
+    @FXML
+    public void chuyenVePrimary(javafx.scene.input.MouseEvent event) {
+        try {
+            lopPhuDangXuat.setVisible(false);
+
+            javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("primary.fxml"));
+            javafx.scene.Scene scene = new javafx.scene.Scene(root);
+            
+            javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+            
+        } catch (Exception e) {
+            System.out.println("Lỗi không về trang chủ được!");
+            e.printStackTrace();
+        }
+    }
 }

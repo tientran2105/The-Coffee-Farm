@@ -22,17 +22,24 @@ import javafx.stage.Stage;
 
 public class OrderScreen_Controller implements Initializable {
 
-    @FXML private VBox vboxGioHang;
-    @FXML private Button btnSuaGioHang;
-    @FXML private RadioButton rdoOnline;
-    @FXML private RadioButton rdoTaiQuay;
-    @FXML private Label lblTongTien;
-    @FXML private CheckBox chkTatCa;
+    @FXML
+    private VBox vboxGioHang;
+    @FXML
+    private Button btnSuaGioHang;
+    @FXML
+    private RadioButton rdoOnline;
+    @FXML
+    private RadioButton rdoTaiQuay;
+    @FXML
+    private Label lblTongTien;
+    @FXML
+    private CheckBox chkTatCa;
 
     private boolean dangSuaMode = false;
     private List<Button> danhSachNutXoa = new ArrayList<>();
-    
+
     class DongGioHang {
+
         CheckBox chkChonMua;
         Label lblSoLuong;
         int giaTienMotMon;
@@ -43,16 +50,16 @@ public class OrderScreen_Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        if (TaiKhoan.phuongThucNhan == 1) { 
+        if (TaiKhoan.phuongThucNhan == 1) {
             rdoTaiQuay.setDisable(true);
-            rdoTaiQuay.setStyle("-fx-opacity: 0.4;"); 
-            rdoOnline.setSelected(true); 
+            rdoTaiQuay.setStyle("-fx-opacity: 0.4;");
+            rdoOnline.setSelected(true);
         } else {
-            rdoOnline.setSelected(true); 
+            rdoOnline.setSelected(true);
         }
 
         taiDuLieuTuGioHangChung();
-        capNhatTongTien(); 
+        capNhatTongTien();
     }
 
     private void taiDuLieuTuGioHangChung() {
@@ -66,55 +73,54 @@ public class OrderScreen_Controller implements Initializable {
 
             HBox dongMonHang = new HBox(15);
             dongMonHang.setStyle("-fx-padding: 10; -fx-background-color: #f5f5f5; -fx-background-radius: 10; -fx-alignment: center-left;");
-            
+
             CheckBox chkChonMua = new CheckBox();
             chkChonMua.setStyle("-fx-cursor: hand;");
             chkChonMua.setOnAction(e -> {
-                capNhatTongTien(); 
-                kiemTraNutTatCa(); 
+                capNhatTongTien();
+                kiemTraNutTatCa();
             });
 
             Label lblTen = new Label(tenMon);
             lblTen.setStyle("-fx-font-weight: bold; -fx-font-size: 14px;");
-            
+
             HBox khongGianTrong = new HBox();
             HBox.setHgrow(khongGianTrong, Priority.ALWAYS);
 
             Button btnTru = new Button("-");
             btnTru.setStyle("-fx-background-color: #dddddd; -fx-cursor: hand; -fx-background-radius: 5;");
-            Label lblSoLuong = new Label(String.valueOf(soLuongHienTai)); 
+            Label lblSoLuong = new Label(String.valueOf(soLuongHienTai));
             lblSoLuong.setStyle("-fx-font-weight: bold; -fx-padding: 0 10 0 10;");
             Button btnCong = new Button("+");
             btnCong.setStyle("-fx-background-color: #dddddd; -fx-cursor: hand; -fx-background-radius: 5;");
-            
+
             btnCong.setOnAction(e -> {
                 int sl = Integer.parseInt(lblSoLuong.getText());
                 lblSoLuong.setText(String.valueOf(sl + 1));
-                TaiKhoan.gioHangChung.get(tenMon)[0] = sl + 1; 
-                capNhatTongTien(); 
+                TaiKhoan.gioHangChung.get(tenMon)[0] = sl + 1;
+                capNhatTongTien();
             });
-            
+
             btnTru.setOnAction(e -> {
                 int sl = Integer.parseInt(lblSoLuong.getText());
-                if (sl > 1) { 
+                if (sl > 1) {
                     lblSoLuong.setText(String.valueOf(sl - 1));
-                    TaiKhoan.gioHangChung.get(tenMon)[0] = sl - 1; 
+                    TaiKhoan.gioHangChung.get(tenMon)[0] = sl - 1;
                     capNhatTongTien();
                 }
             });
             HBox boxSoLuong = new HBox(5, btnTru, lblSoLuong, btnCong);
             boxSoLuong.setStyle("-fx-alignment: center; -fx-padding: 0 10 0 0;");
 
-            String giaChu = String.format("%,dđ", giaTien).replace(",", "."); 
+            String giaChu = String.format("%,dđ", giaTien).replace(",", ".");
             Label lblGia = new Label(giaChu);
             lblGia.setStyle("-fx-pref-width: 70px; -fx-alignment: center-right;");
 
             Button btnXoa = new Button("X");
             btnXoa.setStyle("-fx-background-color: #ff3333; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-cursor: hand;");
-            btnXoa.setVisible(false); 
+            btnXoa.setVisible(false);
             danhSachNutXoa.add(btnXoa);
 
-          
             DongGioHang dongDuLieu = new DongGioHang();
             dongDuLieu.chkChonMua = chkChonMua;
             dongDuLieu.lblSoLuong = lblSoLuong;
@@ -126,9 +132,9 @@ public class OrderScreen_Controller implements Initializable {
             btnXoa.setOnAction(e -> {
                 vboxGioHang.getChildren().remove(dongMonHang);
                 danhSachNutXoa.remove(btnXoa);
-                danhSachMonTrongGio.remove(dongDuLieu); 
-                TaiKhoan.gioHangChung.remove(tenMon); 
-                capNhatTongTien(); 
+                danhSachMonTrongGio.remove(dongDuLieu);
+                TaiKhoan.gioHangChung.remove(tenMon);
+                capNhatTongTien();
             });
 
             dongMonHang.getChildren().addAll(chkChonMua, lblTen, khongGianTrong, boxSoLuong, lblGia, btnXoa);
@@ -136,7 +142,6 @@ public class OrderScreen_Controller implements Initializable {
         }
     }
 
-  
     private void capNhatTongTien() {
         int tongCong = 0;
         for (DongGioHang dong : danhSachMonTrongGio) {
@@ -170,37 +175,17 @@ public class OrderScreen_Controller implements Initializable {
 
     @FXML
     private void xuLySuaGioHang(ActionEvent event) {
-        dangSuaMode = !dangSuaMode; 
+        dangSuaMode = !dangSuaMode;
         if (dangSuaMode) {
             btnSuaGioHang.setText("Xong");
-            for (Button nutXoa : danhSachNutXoa) nutXoa.setVisible(true);
+            for (Button nutXoa : danhSachNutXoa) {
+                nutXoa.setVisible(true);
+            }
         } else {
             btnSuaGioHang.setText("Sửa");
-            for (Button nutXoa : danhSachNutXoa) nutXoa.setVisible(false);
-        }
-    }
-
-    @FXML
-    private void xuLyMuaHang(ActionEvent event) {
-        int tongTien = Integer.parseInt(lblTongTien.getText().replace(".", "").replace("đ", ""));
-        if (tongTien == 0) {
-            System.out.println("Ê! M chưa tick chọn mua món nào kìa!");
-            return;
-        }
-
-        try {
-            Parent rootObj;
-            if (rdoOnline.isSelected()) {
-                rootObj = FXMLLoader.load(getClass().getResource("ThanhToanQR.fxml"));
-            } else {
-                rootObj = FXMLLoader.load(getClass().getResource("ThanhToanTaiQuay.fxml"));
+            for (Button nutXoa : danhSachNutXoa) {
+                nutXoa.setVisible(false);
             }
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(rootObj));
-            stage.show();
-        } catch (Exception e) {
-            System.out.println("Lỗi không chuyển hướng được!");
-            e.printStackTrace();
         }
     }
 
@@ -209,6 +194,49 @@ public class OrderScreen_Controller implements Initializable {
         if (TaiKhoan.sceneTruocKhiVaoGio != null) {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(TaiKhoan.sceneTruocKhiVaoGio);
+        }
+    }
+    @FXML
+    private javafx.scene.layout.AnchorPane lopPhuQR;
+
+    @FXML
+    private void xuLyMuaHang(ActionEvent event) {
+        int tongTien = Integer.parseInt(lblTongTien.getText().replace(".", "").replace("đ", ""));
+        if (tongTien == 0) {
+            return;
+        }
+
+        if (rdoOnline.isSelected()) {
+            lopPhuQR.setVisible(true);
+        } else if (rdoTaiQuay.isSelected()) {
+            chuyenTrang(event, "DanhSachCoSo.fxml");
+        }
+    }
+
+    @FXML
+    private void xacNhanDaQuetQR(javafx.scene.input.MouseEvent event) {
+        lopPhuQR.setVisible(false);
+        chuyenTrangSauKhiBamVungNgoai(event, "MuaHangThanhCong(Onl).fxml");
+    }
+
+    private void chuyenTrangSauKhiBamVungNgoai(javafx.scene.input.MouseEvent event, String fxml) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxml));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void chuyenTrang(ActionEvent event, String fxml) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxml));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+        } catch (Exception e) {
+            e.printStackTrace();
+
         }
     }
 }
