@@ -100,7 +100,8 @@ public class Primary_Controller implements Initializable {
             javafx.scene.layout.BorderPane khungChinh = (javafx.scene.layout.BorderPane) voChinh.lookup("#khungChinh");
 
             khungChinh.setCenter(ruotNLSC);
-            stage.setScene(new javafx.scene.Scene(voChinh));
+            stage.setScene(new javafx.scene.Scene(voChinh, 500, 700));
+            stage.setResizable(false);
         } catch (Exception e) {
             System.out.println("Lỗi vào Nguyên liệu sơ chế!");
             e.printStackTrace();
@@ -118,7 +119,8 @@ public class Primary_Controller implements Initializable {
             javafx.scene.layout.BorderPane khungChinh = (javafx.scene.layout.BorderPane) voChinh.lookup("#khungChinh");
 
             khungChinh.setCenter(ruotFood);
-            stage.setScene(new javafx.scene.Scene(voChinh));
+            stage.setScene(new javafx.scene.Scene(voChinh, 500, 700));
+            stage.setResizable(false);
         } catch (Exception e) {
             System.out.println("Lỗi vào Food and Drink!");
             e.printStackTrace();

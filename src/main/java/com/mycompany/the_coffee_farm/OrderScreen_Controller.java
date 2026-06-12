@@ -20,6 +20,7 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+
 public class OrderScreen_Controller implements Initializable {
 
     @FXML
@@ -199,23 +200,36 @@ public class OrderScreen_Controller implements Initializable {
     @FXML
     private javafx.scene.layout.AnchorPane lopPhuQR;
 
-    @FXML
+@FXML
     private void xuLyMuaHang(ActionEvent event) {
-        int tongTien = Integer.parseInt(lblTongTien.getText().replace(".", "").replace("đ", ""));
-        if (tongTien == 0) {
-            return;
-        }
+        try {
+            int tongTien = Integer.parseInt(lblTongTien.getText().replace(".", "").replace("đ", "").trim());
+            if (tongTien == 0) return;
 
-        if (rdoOnline.isSelected()) {
-            lopPhuQR.setVisible(true);
-        } else if (rdoTaiQuay.isSelected()) {
-            chuyenTrang(event, "DanhSachCoSo.fxml");
+            if (TaiKhoan.phuongThucNhan == 0) {
+                System.out.println("⚠️ Cảnh báo: Khách chưa chọn phương thức nhận hàng!");
+                lopPhuCanhBao.toFront();
+                lopPhuCanhBao.setVisible(true); 
+                return; 
+            }
+
+            if (rdoOnline.isSelected()) {
+                lopPhuQR.toFront(); 
+                lopPhuQR.setVisible(true);
+            } else if (rdoTaiQuay.isSelected()) {
+                xoaCacMonDaMua(); 
+                chuyenTrang(event, "DanhSachCoSo.fxml");
+            }
+        } catch (Exception e) {
+            System.out.println("Lỗi trong lúc xử lý mua hàng:");
+            e.printStackTrace(); 
         }
     }
 
     @FXML
     private void xacNhanDaQuetQR(javafx.scene.input.MouseEvent event) {
         lopPhuQR.setVisible(false);
+        xoaCacMonDaMua(); 
         chuyenTrangSauKhiBamVungNgoai(event, "MuaHangThanhCong(Onl).fxml");
     }
 
@@ -238,5 +252,21 @@ public class OrderScreen_Controller implements Initializable {
             e.printStackTrace();
 
         }
+    }
+    @FXML private javafx.scene.layout.AnchorPane lopPhuCanhBao; 
+    private void xoaCacMonDaMua() {
+        java.util.List<String> monCanXoa = new java.util.ArrayList<>();
+        for (DongGioHang dong : danhSachMonTrongGio) {
+            if (dong.chkChonMua.isSelected()) {
+                monCanXoa.add(dong.tenMon);
+            }
+        }
+        for (String tenMon : monCanXoa) {
+            TaiKhoan.gioHangChung.remove(tenMon);
+        }
+    }
+    @FXML
+    private void anLopPhuCanhBao(javafx.scene.input.MouseEvent event) {
+        lopPhuCanhBao.setVisible(false); 
     }
 }

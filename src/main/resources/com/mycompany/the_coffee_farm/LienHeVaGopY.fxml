@@ -1,8 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26">
-    
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.the_coffee_farm.LienHeVaGopY_Controller">
+   <children>
+      <Label layoutX="162.0" layoutY="24.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #4A4A4A;" text="Liên Hệ và Góp Ý" />
+      <ScrollPane fitToWidth="true" layoutY="64.0" prefHeight="638.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <content>
+            <VBox alignment="TOP_CENTER" layoutX="450.0" prefHeight="638.0" prefWidth="480.0" spacing="15.0" style="-fx-background-color: white;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/chat%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Gửi góp ý của bạn">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ý kiến của bạn giúp chúng tôi phục vụ tốt hơn!" textFill="#847e7e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="334.0" prefWidth="445.0" spacing="25.0">
+                     <children>
+                        <VBox spacing="20.0">
+                           <children>
+                              <Label text="Email">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField prefHeight="37.0" prefWidth="445.0" promptText="Nhập email của bạn" style="-fx-background-color: white; -fx-border-color: #E5E5E5; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 8;" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0">
+                           <children>
+                              <Label text="Nội dung góp ý">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <TextArea minHeight="200.0" prefHeight="200.0" prefWidth="440.0" promptText="Chia sẻ ý kiến của bạn với chúng tôi ..." style="-fx-background-color: white; -fx-border-color: #E5E5E5; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 5 10 5 10;" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                        <VBox spacing="20.0">
+                           <children>
+                              <Label text="Hình ảnh (tùy chọn, tối đa 3 ảnh)">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: #cccccc; -fx-border-style: dashed; -fx-border-width: 2; -fx-border-radius: 10;" text="+" textFill="#b4adad" wrapText="true">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                              <Label text="Định dạng: JPG, PNG, Kích thước tối đa: 5MB mỗi ảnh" textFill="#968f8f" />
+                           </children>
+                        </VBox>
+                        <Button maxHeight="45.0" maxWidth="440.0" minHeight="45.0" minWidth="440.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="440.0" style="-fx-background-color: #E0532B; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Gửi góp ý">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Label text="------Hoặc liên hệ qua------" textFill="#8c8888" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="440.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/call.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="55.0" prefWidth="358.0">
+                                 <children>
+                                    <Label text="Tổng đài">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="0966447725" textFill="#a19d9d">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label text="&gt;" textFill="#9e9a9a">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="440.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/email.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="55.0" prefWidth="358.0">
+                                 <children>
+                                    <Label text="Email">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="dinhcongtuan11012006@gmail.com" textFill="#a19d9d">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label text="&gt;" textFill="#9e9a9a">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="440.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/facebook.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="55.0" prefWidth="358.0">
+                                 <children>
+                                    <Label text="Facebook">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="https://www.facebook.com/The.Coffee.Farm.com" textFill="#a19d9d">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label text="&gt;" textFill="#9e9a9a">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="440.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/global.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="55.0" prefWidth="358.0">
+                                 <children>
+                                    <Label text="Website">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="http://www.thecoffeefarm.com/" textFill="#a19d9d">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label text="&gt;" textFill="#9e9a9a">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quayLaiAccount" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="←">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
